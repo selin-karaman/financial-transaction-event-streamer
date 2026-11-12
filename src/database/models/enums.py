@@ -20,3 +20,8 @@ class TransactionStatus(str, Enum):
 class LedgerEntryType(str, Enum):
     DEBIT = "debit"
     CREDIT = "credit"
+
+
+class OutboxStatus(str, Enum):
+    PENDING = "pending"
+    PUBLISHED = "published"
